@@ -21,12 +21,12 @@ div.container {
 }
 
 aside {
-	flex: 1 0 15em;
+	flex: 1 0 12.5em;
 	margin: 0em;
 }
 
 article {
-	flex: 1 0 30em;
+	flex: 1 0 25em;
 }
 
 header {
