@@ -1,0 +1,205 @@
+/*CSS document*/
+
+html,
+body,
+div,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+img {
+	width: 100%;
+	display: block;
+	padding-top: 0.5rem;
+}
+
+div.container {
+	max-width: 35em;
+	margin: auto;
+}
+
+h1 {
+	width: 7em;
+	padding: 0.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+p {
+	font-size: 1rem;
+	padding: 0.5rem;
+	padding-bottom: 2rem;
+}
+
+section.secondary h2 {
+	font-size: 1.5rem;
+}
+
+section.tertiary h2 {
+	font-size: 1.2rem;
+	border-top: solid 1px #557799;
+	padding-top: 0.2rem;
+	padding-left: 0rem;
+	margin: 0.5rem;
+}
+
+h2 {
+	font-family: Serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #557799;
+	line-height: 1.2;
+	padding: 0.5rem;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #557799;
+	font-weight: bold;
+	font-size: 1.25rem;
+	font-family: sans-serif;
+	line-height: 1.3em;
+}
+
+nav ul li {
+	margin-right: 1rem;
+}
+
+nav {
+	margin-bottom: 1rem;
+	margin-left: 0.5rem;
+}
+
+nav ul {
+	list-style: none;
+}
+
+aside {
+	background-color: #CBCFFF;
+	padding: 0.5rem;
+}
+
+section.secondary-aside h2 {
+	font-size: 1.2rem;
+	padding-bottom: 0;
+}
+
+figcaption {
+	font-style: italic;
+	font-family: sans-serif;
+	color: #575757;
+	padding: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+footer {
+	background-color: #557799;
+	padding: 0.5rem;
+	color: #ffffff;
+	font-family: sans-serif;
+}
+
+footer p {
+	padding-bottom: 0;
+}
+
+
+@media screen and (min-width: 35em) {
+	nav ul li {
+		display: inline;
+	}
+
+	nav ul li a,
+	h1,
+	nav,
+	h2,
+	p,
+	figcaption,
+	section.tertiary h2 {
+		margin: 0;
+		padding: 0.5rem 0;
+	}
+}
