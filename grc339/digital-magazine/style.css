@@ -23,7 +23,7 @@ a {
 }
 
 p {
-	font-family: sans-serif;
+	font-family: Bilo;
 	font-size: 1rem;
 	padding: 0.5rem;
 	padding-bottom: 2rem;
@@ -31,31 +31,32 @@ p {
 
 section.secondary h2 {
 	font-size: 1.5rem;
+	padding-top: 0.5rem;
 }
 
 section.tertiary h2 {
 	font-size: 1.2rem;
 	border-top: solid 1px #557799;
-	padding-top: 0.2rem;
+	padding-top: 0.5rem;
 	padding-left: 0rem;
 	margin: 0.5rem;
 }
 
 h2 {
-	font-family: Serif;
+	font-family: Bilo;
 	font-size: 3rem;
 	font-weight: bold;
-	color: #557799;
+	color: #7c6a0a;
 	line-height: 1.2;
 	padding: 0.5rem;
 }
 
 nav ul li a {
 	text-decoration: none;
-	color: #557799;
-	font-weight: bold;
+	color: #fa9500;
 	font-size: 1.25rem;
-	font-family: sans-serif;
+	font-family: Bilo;
+	font-weight: Bold;
 	line-height: 1.3em;
 }
 
@@ -73,7 +74,7 @@ nav ul {
 }
 
 aside {
-	background-color: #CBCFFF;
+	background-color: #ffdac6;
 	padding: 0.5rem;
 }
 
@@ -84,17 +85,17 @@ section.secondary-aside h2 {
 
 figcaption {
 	font-style: italic;
-	font-family: sans-serif;
+	font-family: Bilo;
 	color: #575757;
 	padding: 0.5rem;
 	padding-bottom: 1rem;
 }
 
 footer {
-	background-color: #557799;
+	background-color: #fa9500;
 	padding: 0.5rem;
 	color: #ffffff;
-	font-family: sans-serif;
+	font-family: Bilo;
 }
 
 footer p {
@@ -115,7 +116,7 @@ footer p {
 	figcaption,
 	section.tertiary h2 {
 		margin: 0;
-		padding: 0.5rem 0;
+		padding: 0.2rem;
 	}
 }
 
@@ -125,6 +126,7 @@ footer p {
 		padding: 0 1em;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
+		/* grid-template-rows: 18em auto; */
 		grid-gap: 1em;
 	}
 
@@ -185,7 +187,7 @@ footer p {
 		flex: 0 0 4em;
 	}
 
-	section.secondary {
+	/* section.secondary {
 		display: flex;
 	}
 
@@ -198,7 +200,7 @@ footer p {
 	section.secondary a figure {
 		flex: 1 0 12em;
 		display: flex;
-	}
+	} */
 
 	section.secondary a figure img {
 		object-fit: cover;
