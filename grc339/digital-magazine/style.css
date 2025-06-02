@@ -14,7 +14,7 @@ div.container, div.home-container {
 
 h1 {
 	width: 7em;
-	padding: 0.5rem;
+	margin: 0.5rem 0;
 }
 
 a {
@@ -26,7 +26,6 @@ p {
 	font-family: "komet", sans-serif;
 	font-size: 1rem;
 	line-height: 1.2rem;
-	/*padding: 0.5rem;*/
 	padding-bottom: 1rem;
 }
 
@@ -37,10 +36,10 @@ section.secondary h2 {
 
 section.tertiary h2 {
 	font-size: 1.2rem;
-	border-top: solid 1px #557799;
+	border-top: solid 1px #7c6a0a;
 	padding-top: 0.5rem;
 	padding-left: 0rem;
-	margin: 0.5rem;
+	margin: 0 0.5rem;
 }
 
 h2 {
@@ -49,7 +48,6 @@ h2 {
 	font-weight: bold;
 	color: #7c6a0a;
 	line-height: 1.2;
-	/*padding: 0.5rem;*/
 }
 
 h3 {
@@ -68,6 +66,10 @@ nav ul li a {
 	line-height: 1.3em;
 }
 
+nav ul li a:hover {
+	color: #eb6424;
+}
+
 nav ul li {
 	margin-right: 1rem;
 }
@@ -84,6 +86,7 @@ nav ul {
 aside {
 	background-color: #ffdac6;
 	padding: 0.5rem;
+	margin-top: 2rem;
 }
 
 section.secondary-aside h2 {
@@ -108,6 +111,10 @@ footer {
 
 footer p {
 	padding-bottom: 0;
+}
+
+header, h2, p, figcaption {
+	padding: 0.5rem 0.5rem;
 }
 
 /*CSS for photogallery page*/
@@ -198,13 +205,21 @@ section.personal-info, section.personalization {
 button {
 	background-color: #ffdac6;
 	border: none;
-	padding: 15px 32px;
-	border-radius: 8px;
+	padding: 1em 2em;
+	border-radius: 1em;
 	margin-bottom: 1em;
 }
 
 button:hover {
 	background-color: #fa9500;
+}
+
+section.personalization p {
+	padding: 0.1rem 0;
+}
+
+form {
+	padding: 0 0.5rem;
 }
 
 @media screen and (min-width: 35em) {
@@ -213,14 +228,20 @@ button:hover {
 	}
 
 	nav ul li a,
-	h1,
 	nav,
 	h2,
 	p,
 	figcaption,
 	section.tertiary h2 {
 		margin: 0;
-		/*padding: 0.2rem;*/
+	}
+
+	header, h2, p, figcaption {
+		padding: 0.2rem 0;
+	}
+
+	form {
+		padding: 0;
 	}
 }
 
@@ -230,7 +251,6 @@ button:hover {
 		padding: 0 1em;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
-		/* grid-template-rows: 18em auto; */
 		grid-gap: 1em;
 	}
 
@@ -291,21 +311,6 @@ button:hover {
 		flex: 0 0 4em;
 	}
 
-	/* section.secondary {
-		display: flex;
-	}
-
-	section.secondary a {
-		flex: 1 0 12em;
-		display: flex;
-		flex-direction: column;
-	}
-
-	section.secondary a figure {
-		flex: 1 0 12em;
-		display: flex;
-	} */
-
 	section.secondary a figure img {
 		object-fit: cover;
 	}
@@ -322,5 +327,61 @@ button:hover {
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(4, auto);
 		margin-bottom: 0;
+	}
+
+	aside {
+		margin-top: 0;
+	}
+}
+
+/*CSS for Alternate Color Scheme*/
+
+@media screen and (prefers-color-scheme: dark) {
+	body {
+    background-color: #121212;
+    color: #c0c0c0;
+	}
+
+	a {
+		color: #c0c0c0;
+	}
+
+	h2 {
+		color: #babd8d;
+	}
+
+	aside {
+		background-color: #7c6a0a;
+	}
+
+	figcaption {
+		color: #c0c0c0;
+	}
+
+	nav ul li a {
+		color: #babd8d;
+	}
+
+	footer {
+		background-color: #babd8d;
+		color: #121212;
+	}
+
+	nav ul li a:hover {
+		color: #7c6a0a;
+	}
+
+	h1 {  
+    	background-image: url("logo-dark.svg");  
+    	background-repeat: no-repeat;  
+    	background-size: contain;  
+    }
+	
+	h1 img {  
+    	opacity: 0;  
+    }
+	
+	section.tertiary h2 {
+		border-top: solid 1px #babd8d;
 	}
 }
